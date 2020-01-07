@@ -1,0 +1,31 @@
+.navbar {
+  background-color: @gold;
+  max-width: 1000px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0.85;
+  .flexbox (space-evenly, center, row);
+  height: 5vh;
+
+  h1 {
+    font-size: 2rem;
+  } // closes h1
+
+  nav {
+    .flexbox (space-evenly, center, row);
+    font-size: 1.6rem;
+    width: 30%;
+  } // closes nav
+
+  .button {
+    background-color: @orange;
+    color: white;
+    font-size: 1.7rem;
+    text-decoration: none;
+    border-radius: 5px;
+    height: 80%;
+    width: 10%;
+    .flexbox(center, center, row);
+  } // closes button
+} // closes navbar
