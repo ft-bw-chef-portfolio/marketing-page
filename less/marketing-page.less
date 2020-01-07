@@ -1,0 +1,55 @@
+body {
+  header {
+    margin-top: 5vh;
+    max-width: 100%;
+  } // closes header
+
+  .title {
+    font-size: 5rem;
+    text-align: center;
+    margin: 5% auto;
+    font-weight: bold;
+  } // closes title
+
+  .button {
+    .buttons(@orange, white);
+  } // closes button
+
+  .about {
+    font-size: 2rem;
+    max-width: 80%;
+    margin: 10% auto;
+    line-height: 2.5rem;
+    p {
+      margin: 2% 0;
+    }
+  } // closes about
+
+  .boxes {
+    .flexbox(space-between, center, row);
+    max-width: 100%;
+    .box {
+      .flexbox(center, center, column);
+      width: 30%;
+
+      img {
+        max-width: 100%;
+      } // closes img
+
+      h2 {
+        background-color: @gold;
+        font-size: 2rem;
+        width: 100%;
+        padding: 10% 0;
+        text-align: center;
+      } // closes h2
+    } // closes box
+  } // closes boxes
+
+  footer {
+    background-color: @gold;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 2% 0;
+  } // closes footer
+} // closes body

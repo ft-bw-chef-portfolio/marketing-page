@@ -1,0 +1,28 @@
+.flexbox (@justify, @align, @direction) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+  flex-wrap: wrap;
+  flex-direction: @direction;
+}
+
+.buttons (@bg-color, @txt-color) {
+  background-color: @bg-color;
+  border-radius: 7px;
+  padding: 2%;
+  width: 30%;
+  margin: 5% auto;
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: @txt-color;
+    font-size: 2rem;
+  }
+  &:hover {
+    background-color: @txt-color;
+    border: 1px solid @bg-color;
+    a {
+      color: @bg-color;
+    }
+  }
+}
