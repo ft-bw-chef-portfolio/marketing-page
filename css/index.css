@@ -1,0 +1,301 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.navbar {
+  background-color: #fdda16;
+  max-width: 1000px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0.9;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 5vh;
+}
+.navbar h1 {
+  font-size: 2rem;
+}
+.navbar nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 1.6rem;
+  width: 30%;
+}
+.navbar nav a {
+  text-decoration: none;
+  color: black;
+}
+@media (max-width: 500px) {
+  .navbar nav {
+    width: 50%;
+  }
+}
+.navbar .sign-up {
+  background-color: #ff9000;
+  color: white;
+  font-size: 1.7rem;
+  text-decoration: none;
+  border-radius: 5px;
+  height: 80%;
+  width: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+@media (max-width: 500px) {
+  .navbar .sign-up {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .navbar .sign-up {
+    width: 15%;
+  }
+}
+body header {
+  margin-top: 5vh;
+}
+body header img {
+  width: 100%;
+}
+body .title {
+  font-size: 5rem;
+  text-align: center;
+  margin: 5% auto;
+  font-weight: bold;
+}
+body .button {
+  background-color: #ff9000;
+  border-radius: 7px;
+  padding: 2%;
+  margin: 5% auto;
+  text-align: center;
+  width: 30%;
+}
+body .button a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+body .button:hover {
+  background-color: white;
+  border: 1px solid #ff9000;
+}
+body .button:hover a {
+  color: #ff9000;
+}
+@media (max-width: 500px) {
+  body .button {
+    width: 60%;
+  }
+}
+@media (max-width: 800px) {
+  body .button {
+    width: 45%;
+  }
+}
+body .about {
+  font-size: 2rem;
+  max-width: 80%;
+  margin: 10% auto;
+  line-height: 2.5rem;
+}
+body .about p {
+  margin: 3% 0;
+}
+body .boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 100%;
+}
+@media (max-width: 500px) {
+  body .boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+  body .boxes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+body .boxes .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 30%;
+}
+@media (max-width: 500px) {
+  body .boxes .box {
+    width: 85%;
+    margin: 3% auto;
+  }
+}
+body .boxes .box img {
+  max-width: 100%;
+}
+body .boxes .box h2 {
+  background-color: #fdda16;
+  font-size: 2rem;
+  width: 100%;
+  padding: 10% 0;
+  text-align: center;
+}
+body footer {
+  background-color: #fdda16;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 2% 0;
+}
