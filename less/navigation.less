@@ -1,12 +1,13 @@
 .navbar {
   background-color: @gold;
-  max-width: 1000px;
-  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  width: 1000px;
   position: fixed;
   top: 0;
   opacity: 0.9;
-  .flexbox (space-evenly, center, row);
   height: 5vh;
+  .flexbox (space-evenly, center, row);
 
   h1 {
     font-size: 2rem;
@@ -45,3 +46,54 @@
     }
   } // closes button
 } // closes navbar
+
+header {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 10%;
+  background-color: @gold;
+  nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav_links li {
+    display: inline-block;
+    padding-left: 4rem;
+    @media @phone {
+      padding-bottom: 0.5rem;
+      padding-top: 0.5rem;
+    }
+  }
+  .nav_links ul {
+    width: 100%;
+    padding-right: 0%;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 30%;
+    font-size: 2rem;
+    color: @orange;
+    // img{
+    // width: 10%;
+    // height: auto;
+    // }
+    @media @phone {
+      padding-left: 1rem;
+    }
+  }
+  button {
+    padding: 9px 25px;
+    background-color: @orange;
+    border: none;
+    border-radius: 50px;
+  }
+  @media @phone {
+    flex-direction: column;
+    text-align: center;
+  }
+}
