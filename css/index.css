@@ -165,17 +165,24 @@ a {
   flex-wrap: wrap;
   flex-direction: row;
 }
-.navbar h1 {
+.navbar .home-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.navbar .home-logo h1 {
   font-size: 2rem;
 }
 .navbar nav {
+  font-size: 1.6rem;
+  width: 30%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
-  font-size: 1.6rem;
-  width: 30%;
 }
 .navbar nav a {
   text-decoration: none;
