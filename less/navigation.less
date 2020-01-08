@@ -20,6 +20,10 @@
       text-decoration: none;
       color: black;
     } // closes a
+
+    @media @phone {
+      width: 50%;
+    } // closes media query
   } // closes nav
 
   .sign-up {
@@ -29,7 +33,15 @@
     text-decoration: none;
     border-radius: 5px;
     height: 80%;
-    width: 10%;
+    width: 12%;
     .flexbox(center, center, row);
+
+    @media @phone {
+      display: none;
+    } // closes media query
+
+    @media @tablet {
+      width: 15%;
+    }
   } // closes button
 } // closes navbar

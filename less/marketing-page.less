@@ -1,7 +1,9 @@
 body {
   header {
     margin-top: 5vh;
-    max-width: 100%;
+    img {
+      width: 100%;
+    } // closes img
   } // closes header
 
   .title {
@@ -13,6 +15,15 @@ body {
 
   .button {
     .buttons(@orange, white);
+    width: 30%;
+
+    @media @phone {
+      width: 60%;
+    } // closes media query
+
+    @media @tablet {
+      width: 45%;
+    } // closes media query
   } // closes button
 
   .about {
@@ -21,16 +32,29 @@ body {
     margin: 10% auto;
     line-height: 2.5rem;
     p {
-      margin: 2% 0;
+      margin: 3% 0;
     }
   } // closes about
 
   .boxes {
     .flexbox(space-between, center, row);
     max-width: 100%;
+
+    @media @phone {
+      .flexbox(center, center, column);
+    } // closes media query
+
+    @media @tablet {
+      .flexbox(space-around, center, row);
+    } // closes media query
     .box {
       .flexbox(center, center, column);
       width: 30%;
+
+      @media @phone {
+        width: 85%;
+        margin: 3% auto;
+      } // closes media query
 
       img {
         max-width: 100%;
