@@ -6,7 +6,7 @@
   flex-direction: @direction;
 }
 
-.buttons (@bg-color, @txt-color) {
+.buttons (@bg-color, @txt-color, @hover-bg) {
   background-color: @bg-color;
   border-radius: 7px;
   padding: 2%;
@@ -16,12 +16,16 @@
     text-decoration: none;
     color: @txt-color;
     font-size: 2rem;
-  }
+  } // closes a
   &:hover {
-    background-color: @txt-color;
+    background-color: @hover-bg;
     border: 1px solid @bg-color;
     a {
       color: @bg-color;
-    }
-  }
-}
+    } // closes a
+  } // closes hover
+  &:active {
+    position: relative;
+    top: 1px;
+  } // closes active
+} // closes button

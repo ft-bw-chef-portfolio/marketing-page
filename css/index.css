@@ -321,11 +321,15 @@ body .largest-container .button a {
   font-size: 2rem;
 }
 body .largest-container .button:hover {
-  background-color: white;
+  background-color: #fdda16;
   border: 1px solid #ff9000;
 }
 body .largest-container .button:hover a {
   color: #ff9000;
+}
+body .largest-container .button:active {
+  position: relative;
+  top: 1px;
 }
 @media (max-width: 500px) {
   body .largest-container .button {
